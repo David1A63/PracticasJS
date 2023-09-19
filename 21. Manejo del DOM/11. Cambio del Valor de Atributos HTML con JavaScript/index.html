@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manjeo de DOM con Js</title>
+  </head>
+
+  <body>
+    <h1 id="titulo">Manejo de DOM con Js</h1>
+    <button onclick="Mostrar()">Mostrar</button>
+    <br>
+    <img id="imagen" src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png"/>
+    <script>
+      //Modificando la ruta de la imagen desde js
+      function Mostrar(){
+        document.getElementById('imagen').src = 'https://cdn-icons-png.flaticon.com/512/919/919827.png';
+      }
+    </script>
+  </body>
+</html>

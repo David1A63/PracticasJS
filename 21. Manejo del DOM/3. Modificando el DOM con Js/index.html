@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo DOM con Js</title>
+</head>
+
+<body>
+    <h1 id="cabecera">Ejemplo DOM con Js 3</h1>
+    <p id="parrafo">Hola Mundo</p>
+    <script>
+        //Siempre poner el Js despues del contenido del body
+        //Recuperando el texto de la cabecera en HTML
+        let cabecera = document.getElementById("cabecera");
+        let parrafo = document.getElementById("parrafo");
+
+        console.log("Hola Mundo");
+        console.log(`El contenido de la cabecera es: ${cabecera.innerHTML}`);
+        console.log(`El parrafo es: ${parrafo.innerHTML}`);
+
+        //Modificando el contenido del innerHtml
+        cabecera.innerHTML = 'Modificando la cabecera con Js';
+        parrafo.innerHTML = 'Este es el nuevo parrafo';
+    </script>
+</body>
+
+</html>

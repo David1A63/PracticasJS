@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo de Eventos del DOM</title>
+</head>
+<body>
+    <h1 id="titulo" onmousedown="rojo(this)" onmouseup="azul(this)" onclick="verde(this)">Manejo de Eventos del DOM con Js</h1>
+    <br>
+    <script>
+        function rojo(titulo){
+            console.log("rojo");
+            titulo.style.color = 'red';
+        }
+        function azul(titulo){
+            console.log("azul")
+            titulo.style.color = 'blue';
+        }
+        function verde(titulo){
+            console.log('verde')
+            titulo.style.color = 'green';
+        }
+    </script>
+</body>
+</html>

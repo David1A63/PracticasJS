@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo DOM con Js</title>
+</head>
+
+<body>
+    <h1 id="cabecera">Ejemplo DOM con Js 4</h1>
+    <p>Hola Mundo</p>
+    <p>Segundo parrafo</p>
+    <script>
+        //Siempre poner el Js despues del contenido del body
+        //Recuperando elementos con el tag name del elemento
+        let parrafos = document.getElementsByTagName('p');
+        console.log(`El número de parrafos es: ${parrafos.length}`);
+        for(let i = 0; i<parrafos.length; i++){
+            console.log(`Parrafo ${i}: ${parrafos[i].innerHTML}`);
+        }
+    </script>
+</body>
+
+</html>

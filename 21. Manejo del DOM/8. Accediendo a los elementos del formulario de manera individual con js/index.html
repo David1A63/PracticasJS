@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo Formulario con Js</title>
+</head>
+
+<body>
+    <form id="formulario" action="">
+        Nombre: <input type="text" name="nombre" id="" value="Juan"><br>
+        Apellido <input type="text" name="apellido" id="" value="Perez"><br>
+    </form>
+    <button onclick="mostrarValores()">Mostrar</button>
+    <div id="valores">
+
+    </div>
+    <script>
+        function mostrarValores(){
+            //Accediendo al formulario
+            let formulario = document.forms['formulario'];
+            //Variable donde se concatenará el contenido del formulario
+            let texto = '';
+            //Accediendo a los elementos del formulario (El formulario se comporta como un arreglo)
+            let nombre = formulario['nombre'];
+            let apellido = formulario['apellido'];
+            //Imprime el objeto html en la consola
+            //console.log(nombre);
+            //console.log(apellido);
+            //Concatenando los elementos
+            texto = nombre.value + '<br>' + apellido.value;
+            // Modificando el contenido de la vista en Html
+            document.getElementById('valores').innerHTML = texto;
+        }
+    </script>
+</body>
+
+</html>
