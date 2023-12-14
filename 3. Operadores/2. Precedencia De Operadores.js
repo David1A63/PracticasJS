@@ -6,4 +6,5 @@ let z = a * b + c / d;
 console.log(z);
 // las operaciones en Js siguen la jerarquía de operaciones
 z = c + a * b / d;
+// Si se asignan parentesis encerrando un termino esta operación se realizará primero
 console.log(z);
